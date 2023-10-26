@@ -1,0 +1,42 @@
+{
+  "RootObject": {
+    "Id": "e6169d33-d930-4ab5-a414-786e3fc3c573",
+    "Name": "networkplayer",
+    "Enabled": true,
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "0.5,0.5,0.5",
+    "Tags": "player",
+    "Components": [
+      {
+        "__type": "ModelComponent",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "MaterialOverride": "materials/dev/dev_metal_rough00.vmat",
+        "Model": "models/dev/sphere.vmdl",
+        "ShouldCastShadows": true,
+        "Tint": "1,1,1,1"
+      }
+    ],
+    "Children": [
+      {
+        "Id": "87bb7e70-312c-4ec7-bddd-0e87b4aa78b6",
+        "Name": "Point Light",
+        "Enabled": true,
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Components": [
+          {
+            "__type": "PointLightComponent",
+            "__enabled": true,
+            "LightColor": "0.30198,1,0.25743,1",
+            "Radius": 400
+          }
+        ]
+      }
+    ]
+  },
+  "__references": []
+}

@@ -1,0 +1,140 @@
+{
+  "RootObject": {
+    "Id": "ada4b66f-62bb-445b-9527-8e675f27480a",
+    "Name": "floor",
+    "Enabled": true,
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Components": [
+      {
+        "__type": "HazardSelector",
+        "__enabled": true,
+        "cross": "b4a38547-c640-4e67-b39f-cbce0c5a8f69",
+        "regular": "7a428b8c-d472-4c26-a9de-f92229e55e50"
+      }
+    ],
+    "Children": [
+      {
+        "Id": "b4a38547-c640-4e67-b39f-cbce0c5a8f69",
+        "Name": "cross",
+        "Enabled": false,
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Components": [
+          {
+            "__type": "ModelComponent",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": null,
+            "Model": "models/crosssection.vmdl",
+            "ShouldCastShadows": true,
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "Id": "49a14cd6-0962-4738-84d4-bb7836e8a14c",
+            "Name": "Object",
+            "Enabled": true,
+            "Position": "0,0,-25",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Components": [
+              {
+                "__type": "ColliderBoxComponent",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Scale": "100,15,50",
+                "Surface": null
+              }
+            ]
+          },
+          {
+            "Id": "780aa0f5-dd3d-4d55-9637-65380ce9aab9",
+            "Name": "Object (1)",
+            "Enabled": true,
+            "Position": "0,0,-25",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Components": [
+              {
+                "__type": "ColliderBoxComponent",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Scale": "15,100,50",
+                "Surface": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "7a428b8c-d472-4c26-a9de-f92229e55e50",
+        "Name": "regular",
+        "Enabled": true,
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Components": [
+          {
+            "__type": "ModelComponent",
+            "__enabled": true,
+            "BodyGroups": 18446744073709551615,
+            "MaterialOverride": "materials/ambientcg/wood022.vmat",
+            "Model": "models/dev/plane.vmdl",
+            "ShouldCastShadows": true,
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "Id": "bb33c027-1980-4560-8951-b3c642d796f7",
+            "Name": "Object",
+            "Enabled": true,
+            "Position": "0,0,-25",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Components": [
+              {
+                "__type": "ColliderBoxComponent",
+                "__enabled": true,
+                "IsTrigger": false,
+                "Scale": "100,100,50",
+                "Surface": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Id": "439a1a6b-702f-4718-a12b-dbfc3b0a990f",
+        "Name": "Object (1)",
+        "Enabled": true,
+        "Position": "0,0,150",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Components": [
+          {
+            "__type": "ColliderBoxComponent",
+            "__enabled": true,
+            "IsTrigger": false,
+            "Scale": "100,100,50",
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "__references": [
+    "cubickitsune.targetdummy"
+  ]
+}

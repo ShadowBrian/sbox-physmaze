@@ -1,0 +1,198 @@
+{
+  "GameObjects": [
+    {
+      "Id": "474b400b-6665-4f50-9b0a-92b6f5284bf1",
+      "Name": "Directional Light",
+      "Enabled": true,
+      "Position": "0,0,90.2498",
+      "Rotation": "0.4351622,0.4351622,-0.5573454,0.5573453",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "DirectionalLightComponent",
+          "__enabled": true,
+          "LightColor": "0.12376,0.12376,0.12376,1",
+          "Shadows": true,
+          "SkyColor": "0.24752,0.24752,0.24752,1"
+        }
+      ]
+    },
+    {
+      "Id": "08d35d17-142b-4866-b59b-b7975382c240",
+      "Name": "Cubemap",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "EnvmapComponent",
+          "__enabled": true,
+          "Bounds": {
+            "Mins": "-1000,-1000,-1000",
+            "Maxs": "1000,1000,1000"
+          },
+          "Projection": "Box",
+          "Texture": "textures/cubemaps/default2.vtex",
+          "TintColor": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "4e26ef17-030b-4450-8224-4a0ef520b2ab",
+      "Name": "Point Light",
+      "Enabled": true,
+      "Position": "21.46685,-66.93105,682.2917",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "PointLightComponent",
+          "__enabled": true,
+          "LightColor": "0,0.77267,1,1",
+          "Radius": 10000
+        }
+      ]
+    },
+    {
+      "Id": "7195ebe0-4f80-4089-bf59-d7a60aeb9c0b",
+      "Name": "Point Light (1)",
+      "Enabled": true,
+      "Position": "-134.0189,-577.6776,491.6918",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "PointLightComponent",
+          "__enabled": true,
+          "LightColor": "1,0.34,0,1",
+          "Radius": 10000
+        }
+      ]
+    },
+    {
+      "Id": "e65e36fd-b242-4432-b564-8faebeb35732",
+      "Name": "Camera",
+      "Enabled": true,
+      "Position": "0.0001264656,0,600",
+      "Rotation": "0,0.707107,0,0.7071065",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "CameraComponent",
+          "__enabled": true,
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "Color, Depth, Stencil",
+          "FieldOfView": 75.75,
+          "ZFar": 10000,
+          "ZNear": 10
+        },
+        {
+          "__type": "Vignette",
+          "__enabled": true,
+          "Center": "0.5,0.5",
+          "Color": "0,0,0,1",
+          "Intensity": 0.7,
+          "Roundness": 0.4999999,
+          "Smoothness": 1
+        }
+      ]
+    },
+    {
+      "Id": "75796e30-a599-44c2-86b1-4f3788bc4c92",
+      "Name": "Object",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "SkyBox2D",
+          "__enabled": true,
+          "SkyMaterial": "materials/skybox/skybox_workshop.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "33cafdee-cbb9-4687-b9a6-3c27615ee546",
+      "Name": "Object (1)",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "SkyBox2D",
+          "__enabled": true,
+          "SkyMaterial": "materials/skybox/skybox_workshop.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "Id": "20194caf-cbbb-4e8c-9eb5-25ad3e063cb8",
+      "Name": "MazeGen",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "MazeCreator",
+          "__enabled": true,
+          "Floor": "prefabs/floor.object",
+          "Player": "prefabs/player.object",
+          "Wall": "prefabs/wall.object"
+        },
+        {
+          "__type": "ScreenPanel",
+          "__enabled": true,
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "TiltControls",
+          "__enabled": true
+        }
+      ],
+      "Children": [
+        {
+          "Id": "ba8140c1-9d08-4a8e-8d5c-ded09ce97392",
+          "Name": "offsetobject",
+          "Enabled": true,
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": ""
+        },
+        {
+          "Id": "b037e14b-1d70-4c9c-a87f-8a1ff2da1d77",
+          "Name": "score",
+          "Enabled": true,
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "Score",
+              "__enabled": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "__references": []
+}

@@ -1,0 +1,65 @@
+{
+  "RootObject": {
+    "Id": "a0204396-96e9-494f-a9d4-56eec987bdb8",
+    "Name": "endingfloor",
+    "Enabled": true,
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Components": [
+      {
+        "__type": "ModelComponent",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "MaterialOverride": null,
+        "Model": "models/dev/plane.vmdl",
+        "ShouldCastShadows": true,
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "RegenIfPlayerClose",
+        "__enabled": true
+      }
+    ],
+    "Children": [
+      {
+        "Id": "0844ab3a-65a0-422b-92e3-392d61d2f82c",
+        "Name": "Object",
+        "Enabled": true,
+        "Position": "0,0,-25",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Components": [
+          {
+            "__type": "ColliderBoxComponent",
+            "__enabled": true,
+            "IsTrigger": false,
+            "Scale": "100,100,50",
+            "Surface": null
+          }
+        ]
+      },
+      {
+        "Id": "9a3b2626-0d23-44e3-be81-827847b5d8f1",
+        "Name": "Object (1)",
+        "Enabled": true,
+        "Position": "0,0,170",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Components": [
+          {
+            "__type": "ColliderBoxComponent",
+            "__enabled": true,
+            "IsTrigger": false,
+            "Scale": "100,100,100",
+            "Surface": null
+          }
+        ]
+      }
+    ]
+  },
+  "__references": []
+}

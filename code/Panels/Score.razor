@@ -1,0 +1,32 @@
+﻿@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+
+    <div class="vitals">
+
+        <div class="health">
+            Personal best:
+            <div class="icon">star</div>
+            <div class="value">@Sandbox.Services.Stats.GetPlayerStats("shadb.physmaze", Game.SteamId ).Get( "levelhighscores" ).Value</div>
+        </div>
+
+       
+
+        <div class="health">
+            Score:
+            <div class="icon">map</div>
+            <div class="value">@MazeCreator.Instance.LevelsPassed</div>
+        </div>
+
+
+
+    </div>
+
+</root>
+
+@code
+{
+    protected override int BuildHash() => System.HashCode.Combine( MazeCreator.Instance.LevelsPassed );
+}

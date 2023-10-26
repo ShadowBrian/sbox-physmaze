@@ -1,0 +1,32 @@
+{
+  "RootObject": {
+    "Id": "872562f8-b4e7-4f46-a47c-645b28fe3e3c",
+    "Name": "wall",
+    "Enabled": true,
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Components": [
+      {
+        "__type": "ModelComponent",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "MaterialOverride": "8hu_kultiras_wallwood03.vmat",
+        "Model": "models/wall.vmdl",
+        "ShouldCastShadows": true,
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "ColliderBoxComponent",
+        "__enabled": true,
+        "IsTrigger": false,
+        "Scale": "25,100,100",
+        "Surface": null
+      }
+    ]
+  },
+  "__references": [
+    "orus.8hu_kultiras_smallhouse_2"
+  ]
+}

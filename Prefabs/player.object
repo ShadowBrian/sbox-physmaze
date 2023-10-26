@@ -1,0 +1,55 @@
+{
+  "RootObject": {
+    "Id": "37896e94-21c7-4d26-9598-f1ac329b9fc7",
+    "Name": "player",
+    "Enabled": true,
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "0.5,0.5,0.5",
+    "Tags": "player,localplayer",
+    "Components": [
+      {
+        "__type": "ModelComponent",
+        "__enabled": true,
+        "BodyGroups": 18446744073709551615,
+        "MaterialOverride": "materials/dev/dev_metal_rough00.vmat",
+        "Model": "models/dev/sphere.vmdl",
+        "ShouldCastShadows": true,
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "ColliderSphereComponent",
+        "__enabled": true,
+        "IsTrigger": false,
+        "Radius": 30,
+        "Surface": null
+      },
+      {
+        "__type": "PhysicsComponent",
+        "__enabled": true,
+        "Gravity": true,
+        "Static": false
+      }
+    ],
+    "Children": [
+      {
+        "Id": "15e14074-fcf5-47c2-ac69-8a550d6c7062",
+        "Name": "Point Light",
+        "Enabled": true,
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Components": [
+          {
+            "__type": "PointLightComponent",
+            "__enabled": true,
+            "LightColor": "0.30198,1,0.25743,1",
+            "Radius": 400
+          }
+        ]
+      }
+    ]
+  },
+  "__references": []
+}
