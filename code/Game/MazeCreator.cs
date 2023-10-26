@@ -68,11 +68,14 @@ public partial class MazeCreator : BaseComponent
 
 		LevelsPassed += 1;
 
+		width = MathX.FloorToInt( MathX.Clamp( width, 0, 11 ) );
+		height = MathX.FloorToInt( MathX.Clamp( height, 0, 11 ) );
+
 		Sandbox.Services.Stats.Increment( "levels", 1 );
 
 		if ( LevelsPassed > Sandbox.Services.Stats.GetPlayerStats( "shadb.physmaze", Game.SteamId ).Get( "levelhighscores" ).Value )
 		{
-			Sandbox.Services.Stats.SetValue( "levelhighscores", LevelsPassed );
+			Sandbox.Services.Stats.SetValue( "levelhighscores", LevelsPassed );//Not sure this actually works but it should?
 		}
 
 		Transform.Rotation = Rotation.Identity;
