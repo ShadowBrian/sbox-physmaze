@@ -66,7 +66,11 @@ public partial class MazeCreator : BaseComponent
 		width += 1;
 		height += 1;
 
+
+
 		LevelsPassed += 1;
+
+		SeedToUse = (int)MathF.Floor( float.Parse( (System.DateTime.Now.DayOfYear / 7f) + "" + (System.DateTime.Now.Year + LevelsPassed) ) );
 
 		width = MathX.FloorToInt( MathX.Clamp( width, 0, 11 ) );
 		height = MathX.FloorToInt( MathX.Clamp( height, 0, 11 ) );

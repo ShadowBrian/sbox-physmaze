@@ -49,7 +49,7 @@ public static class MazeGenerator
 	private static WallState[,] ApplyRecursiveBacktracker( WallState[,] maze, int width, int height )
 	{
 		// here we make changes
-		var rng = new System.Random( (int)MathF.Floor( System.DateTime.Now.DayOfYear / 7f ) + System.DateTime.Now.Year + 2 );
+		var rng = new System.Random( (int)MathF.Floor( float.Parse( (System.DateTime.Now.DayOfYear / 7f) + "" + (System.DateTime.Now.Year + MazeCreator.Instance.LevelsPassed) ) ) );
 		var positionStack = new Stack<Position>();
 		var position = new Position { X = rng.Next( 0, width ), Y = rng.Next( 0, height ) };
 
