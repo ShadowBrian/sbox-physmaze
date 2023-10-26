@@ -1,4 +1,5 @@
-![image](https://github.com/ShadowBrian/sbox-physmaze/assets/11138884/a9be9a96-28c2-4997-bd0b-de777bf4dc71)
+
+![sbox-dev_v3J2L4BAnH](https://github.com/ShadowBrian/sbox-physmaze/assets/11138884/249d1ecc-b640-4bc7-86f3-2aa933a123ea)
 
 # Physics Maze
 
