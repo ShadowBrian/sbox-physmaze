@@ -78,8 +78,8 @@
       "Id": "e65e36fd-b242-4432-b564-8faebeb35732",
       "Name": "Camera",
       "Enabled": true,
-      "Position": "0.0001264656,0,600",
-      "Rotation": "0,0.707107,0,0.7071065",
+      "Position": "0.0003516508,-0.000000190834,704.7931",
+      "Rotation": "-0.000000001844227,-0.00000005954756,-0.000001279516,-1",
       "Scale": "1,1,1",
       "Tags": "",
       "Components": [
@@ -104,25 +104,26 @@
       ]
     },
     {
-      "Id": "75796e30-a599-44c2-86b1-4f3788bc4c92",
-      "Name": "Object",
+      "Id": "4f71e320-2cf6-4dcc-8841-9a6f6fa1d2de",
+      "Name": "Point1",
       "Enabled": true,
-      "Position": "0,0,0",
-      "Rotation": "0,0,0,1",
-      "Scale": "1,1,1",
-      "Tags": "",
-      "Components": [
-        {
-          "__type": "SkyBox2D",
-          "__enabled": true,
-          "SkyMaterial": "materials/skybox/skybox_workshop.vmat",
-          "Tint": "1,1,1,1"
-        }
-      ]
+      "Position": "0.0003516508,-0.000000190834,704.7931",
+      "Rotation": "0.00000005954756,-0.000000001844189,1,-0.0000006397578",
+      "Scale": "64,64,64",
+      "Tags": ""
     },
     {
-      "Id": "33cafdee-cbb9-4687-b9a6-3c27615ee546",
-      "Name": "Object (1)",
+      "Id": "c252dd41-a258-4b07-9cfc-1824ad5f0cc3",
+      "Name": "Point2",
+      "Enabled": true,
+      "Position": "0.0001264656,0,600",
+      "Rotation": "0,0.707107,0,0.7071065",
+      "Scale": "1,1,1",
+      "Tags": ""
+    },
+    {
+      "Id": "75796e30-a599-44c2-86b1-4f3788bc4c92",
+      "Name": "Object",
       "Enabled": true,
       "Position": "0,0,0",
       "Rotation": "0,0,0,1",
@@ -187,6 +188,66 @@
           "Components": [
             {
               "__type": "Score",
+              "__enabled": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Id": "d70c6dac-8c76-4ac2-8f69-ef50bebddb6c",
+      "Name": "bezier",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "BezierAnimationComponent",
+          "__enabled": true,
+          "AnimateOnStart": true,
+          "AnimationTime": 2,
+          "DelayStart": true,
+          "LerpToPointAngles": true,
+          "ObjectToAnimate": "e65e36fd-b242-4432-b564-8faebeb35732",
+          "Point1": "4f71e320-2cf6-4dcc-8841-9a6f6fa1d2de",
+          "Point2": "c252dd41-a258-4b07-9cfc-1824ad5f0cc3",
+          "segments": 15
+        }
+      ]
+    },
+    {
+      "Id": "eba39bd5-1808-41cc-8580-9936451a3379",
+      "Name": "World UI",
+      "Enabled": true,
+      "Position": "68.49339,22.46989,703.5616",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": "",
+      "Components": [
+        {
+          "__type": "WorldPanel",
+          "__enabled": true,
+          "HorizontalAlign": "Center",
+          "LookAtCamera": true,
+          "PanelSize": "1024,512",
+          "RenderScale": 1,
+          "VerticalAlign": "Center"
+        }
+      ],
+      "Children": [
+        {
+          "Id": "e4d7b476-2d3b-47c5-ba97-ec1cb2b3a473",
+          "Name": "Object",
+          "Enabled": true,
+          "Position": "0,0,0",
+          "Rotation": "0,0,0,1",
+          "Scale": "1,1,1",
+          "Tags": "",
+          "Components": [
+            {
+              "__type": "Logo",
               "__enabled": true
             }
           ]
