@@ -9,5 +9,5 @@ Little physics maze game made in the s&box work-in-progress scene staging system
 - Download repo
 - Add as a project in s&box
 - Open Hierachy and Scene windows
-- Open scene
+- Open scenes/game.scene
 - Press play
