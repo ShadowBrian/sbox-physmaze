@@ -34,7 +34,7 @@
             "Mins": "-1000,-1000,-1000",
             "Maxs": "1000,1000,1000"
           },
-          "Projection": "Box",
+          "Projection": "Sphere",
           "Texture": "textures/cubemaps/default2.vtex",
           "TintColor": "1,1,1,1"
         }

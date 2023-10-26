@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "Id": "ada4b66f-62bb-445b-9527-8e675f27480a",
+    "Id": "15b8ea6f-d3c8-4ddd-9fcb-b789c375aa31",
     "Name": "floor",
     "Enabled": true,
     "Position": "0,0,0",
@@ -11,13 +11,13 @@
       {
         "__type": "HazardSelector",
         "__enabled": true,
-        "cross": "b4a38547-c640-4e67-b39f-cbce0c5a8f69",
-        "regular": "7a428b8c-d472-4c26-a9de-f92229e55e50"
+        "cross": "035f8130-8ff3-4184-b7fa-dcbd9f220f7c",
+        "regular": "85f61cbc-3d89-46b6-b244-f1c4e6231b05"
       }
     ],
     "Children": [
       {
-        "Id": "b4a38547-c640-4e67-b39f-cbce0c5a8f69",
+        "Id": "035f8130-8ff3-4184-b7fa-dcbd9f220f7c",
         "Name": "cross",
         "Enabled": false,
         "Position": "0,0,0",
@@ -37,7 +37,7 @@
         ],
         "Children": [
           {
-            "Id": "49a14cd6-0962-4738-84d4-bb7836e8a14c",
+            "Id": "b082b5a7-cb61-4a8c-a4cb-7f347d35d1a7",
             "Name": "Object",
             "Enabled": true,
             "Position": "0,0,-25",
@@ -55,7 +55,7 @@
             ]
           },
           {
-            "Id": "780aa0f5-dd3d-4d55-9637-65380ce9aab9",
+            "Id": "894880d7-2572-4317-b574-8e89147ebb34",
             "Name": "Object (1)",
             "Enabled": true,
             "Position": "0,0,-25",
@@ -75,7 +75,7 @@
         ]
       },
       {
-        "Id": "7a428b8c-d472-4c26-a9de-f92229e55e50",
+        "Id": "85f61cbc-3d89-46b6-b244-f1c4e6231b05",
         "Name": "regular",
         "Enabled": true,
         "Position": "0,0,0",
@@ -95,7 +95,7 @@
         ],
         "Children": [
           {
-            "Id": "bb33c027-1980-4560-8951-b3c642d796f7",
+            "Id": "a217f941-d5bd-4b83-8c18-36097b1c3f8e",
             "Name": "Object",
             "Enabled": true,
             "Position": "0,0,-25",
@@ -115,7 +115,7 @@
         ]
       },
       {
-        "Id": "439a1a6b-702f-4718-a12b-dbfc3b0a990f",
+        "Id": "2da4c217-ca93-4f4a-9ff9-fd6e84fd441d",
         "Name": "Object (1)",
         "Enabled": true,
         "Position": "0,0,150",
