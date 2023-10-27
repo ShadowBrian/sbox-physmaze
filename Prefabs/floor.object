@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "Id": "15b8ea6f-d3c8-4ddd-9fcb-b789c375aa31",
+    "Id": "5eebc10a-7c0c-4c0e-acfa-ea9971b5ca41",
     "Name": "floor",
     "Enabled": true,
     "Position": "0,0,0",
@@ -11,13 +11,13 @@
       {
         "__type": "HazardSelector",
         "__enabled": true,
-        "cross": "035f8130-8ff3-4184-b7fa-dcbd9f220f7c",
-        "regular": "85f61cbc-3d89-46b6-b244-f1c4e6231b05"
+        "cross": "54921bdd-8308-4a3b-9fc6-fe77174da770",
+        "regular": "31144af0-36a9-4818-bac1-c4b07d49f65a"
       }
     ],
     "Children": [
       {
-        "Id": "035f8130-8ff3-4184-b7fa-dcbd9f220f7c",
+        "Id": "54921bdd-8308-4a3b-9fc6-fe77174da770",
         "Name": "cross",
         "Enabled": false,
         "Position": "0,0,0",
@@ -37,8 +37,8 @@
         ],
         "Children": [
           {
-            "Id": "b082b5a7-cb61-4a8c-a4cb-7f347d35d1a7",
-            "Name": "Object",
+            "Id": "7b5c6dff-a491-404e-98a1-d762276587ad",
+            "Name": "floor",
             "Enabled": true,
             "Position": "0,0,-25",
             "Rotation": "0,0,0,1",
@@ -55,8 +55,8 @@
             ]
           },
           {
-            "Id": "894880d7-2572-4317-b574-8e89147ebb34",
-            "Name": "Object (1)",
+            "Id": "c875d3a0-afd0-4497-b7cf-2b9f361df58f",
+            "Name": "floor",
             "Enabled": true,
             "Position": "0,0,-25",
             "Rotation": "0,0,0,1",
@@ -75,7 +75,7 @@
         ]
       },
       {
-        "Id": "85f61cbc-3d89-46b6-b244-f1c4e6231b05",
+        "Id": "31144af0-36a9-4818-bac1-c4b07d49f65a",
         "Name": "regular",
         "Enabled": true,
         "Position": "0,0,0",
@@ -95,8 +95,8 @@
         ],
         "Children": [
           {
-            "Id": "a217f941-d5bd-4b83-8c18-36097b1c3f8e",
-            "Name": "Object",
+            "Id": "2fc94ea1-2e98-43f4-9cf0-bf99974c60c8",
+            "Name": "floor",
             "Enabled": true,
             "Position": "0,0,-25",
             "Rotation": "0,0,0,1",
@@ -115,7 +115,7 @@
         ]
       },
       {
-        "Id": "2da4c217-ca93-4f4a-9ff9-fd6e84fd441d",
+        "Id": "ea85ec10-d9ac-4683-a44d-4b47daf0497b",
         "Name": "Object (1)",
         "Enabled": true,
         "Position": "0,0,150",

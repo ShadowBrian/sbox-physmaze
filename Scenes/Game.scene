@@ -165,6 +165,10 @@
         {
           "__type": "TiltControls",
           "__enabled": true
+        },
+        {
+          "__type": "SoundListenerComponent",
+          "__enabled": true
         }
       ],
       "Children": [
@@ -253,6 +257,15 @@
           ]
         }
       ]
+    },
+    {
+      "Id": "967a9aed-5e44-4720-8ff8-bf41bab8d5e4",
+      "Name": "Object",
+      "Enabled": true,
+      "Position": "0,0,0",
+      "Rotation": "0,0,0,1",
+      "Scale": "1,1,1",
+      "Tags": ""
     }
   ],
   "__references": []

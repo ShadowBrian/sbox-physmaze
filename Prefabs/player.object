@@ -1,6 +1,6 @@
 {
   "RootObject": {
-    "Id": "37896e94-21c7-4d26-9598-f1ac329b9fc7",
+    "Id": "6fd1fbb9-d86d-410a-8400-bb5e48f0fd9d",
     "Name": "player",
     "Enabled": true,
     "Position": "0,0,0",
@@ -29,11 +29,17 @@
         "__enabled": true,
         "Gravity": true,
         "Static": false
+      },
+      {
+        "__type": "CollisionSounds",
+        "__enabled": true,
+        "HitSound": "sounds/impact/ball_hit.sound",
+        "RollSound": "sounds/marble_roll_loop.sound"
       }
     ],
     "Children": [
       {
-        "Id": "15e14074-fcf5-47c2-ac69-8a550d6c7062",
+        "Id": "a4f3b8d9-9d96-4b37-bd4e-c2e0937bd46b",
         "Name": "Point Light",
         "Enabled": true,
         "Position": "0,0,0",
