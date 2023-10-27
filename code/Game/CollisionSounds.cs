@@ -11,8 +11,6 @@ public sealed class CollisionSounds : BaseComponent
 
 	PhysicsComponent phys;
 
-	ColliderBaseComponent col;
-
 	public override void OnStart()
 	{
 		phys = GetComponent<PhysicsComponent>( false );
