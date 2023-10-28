@@ -14,14 +14,14 @@ public sealed class CollisionSounds : BaseComponent
 	public override void OnStart()
 	{
 		phys = GetComponent<PhysicsComponent>( false );
-		phys.GetBody().OnTouchStart += OnTouchStart;
+		phys.GetBody().OnIntersectionStart += OnTouchStart;
 
-		phys.GetBody().OnTouchStop += OnTouchStop;
+		phys.GetBody().OnIntersectionEnd += OnTouchStop;
 
-		phys.GetBody().OnTouchStay += OnTouchStay;
+		phys.GetBody().OnIntersectionUpdate += OnTouchStay;
 	}
 
-	private void OnTouchStop( PhysicsCollisionStop stop )
+	private void OnTouchStop( PhysicsIntersectionEnd stop )
 	{
 		if ( (stop.Other.Body.GameObject as GameObject).Name == "floor" )
 		{
@@ -31,7 +31,7 @@ public sealed class CollisionSounds : BaseComponent
 
 	bool OnFloor;
 
-	private void OnTouchStay( PhysicsCollisionStay stay )
+	private void OnTouchStay( PhysicsIntersection stay )
 	{
 		if ( (stay.Other.Body.GameObject as GameObject).Name == "floor" )
 		{
@@ -43,7 +43,7 @@ public sealed class CollisionSounds : BaseComponent
 		}
 	}
 
-	private void OnTouchStart( PhysicsCollisionStart start )
+	private void OnTouchStart( PhysicsIntersection start )
 	{
 		if ( (start.Other.Body.GameObject as GameObject).Name == "wall" )
 		{
