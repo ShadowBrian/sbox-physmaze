@@ -11,6 +11,7 @@ public class TiltControls : BaseComponent
 
 	float roll;
 	float pitch;
+	float yaw;
 
 	private float lerpSpeed = 2.0f; // Adjust the speed of the interpolation
 
@@ -22,27 +23,63 @@ public class TiltControls : BaseComponent
 	}
 
 
+	public bool UseGamepadTilt;
+
 	public override void Update()
 	{
-		var mouseDelta = Input.MouseDelta;
 
-		var rotation = Transform.Rotation;
+		if ( !UseGamepadTilt )
+		{
+			var mouseDelta = Input.MouseDelta;
 
-		roll = rotation.Roll();
+			var rotation = Transform.Rotation;
 
-		pitch = rotation.Pitch();
+			roll = rotation.Roll();
 
-		roll += mouseDelta.x;// * 0.05f; // Adjust the rotation based on the horizontal mouse movement
-		pitch -= mouseDelta.y;// * 0.05f; // Adjust the rotation based on the vertical mouse movement
+			pitch = rotation.Pitch();
 
-		roll = MathX.Clamp( roll, -20f, 20f );
-		pitch = MathX.Clamp( pitch, -20f, 20f );
+			roll += mouseDelta.x;// * 0.05f; // Adjust the rotation based on the horizontal mouse movement
+			pitch -= mouseDelta.y;// * 0.05f; // Adjust the rotation based on the vertical mouse movement
 
-		rotation = new Angles( pitch, 0, roll ).ToRotation();
+			roll = MathX.Clamp( roll, -20f, 20f );
+			pitch = MathX.Clamp( pitch, -20f, 20f );
 
-		//rotation = Rotation.Slerp( rotation, startRotation, Time.Delta * 10f );
+			rotation = new Angles( pitch, 0, roll ).ToRotation();
 
-		Transform.Rotation = Rotation.Slerp( Transform.Rotation, rotation, Time.Delta * 10f );
+			//rotation = Rotation.Slerp( rotation, startRotation, Time.Delta * 10f );
+
+			Transform.Rotation = Rotation.Slerp( Transform.Rotation, rotation, Time.Delta * 10f );
+
+			if ( Input.UsingController && Input.MotionData.Rotation != Rotation.Identity )
+			{
+				UseGamepadTilt = true;
+			}
+		}
+
+		if ( UseGamepadTilt )
+		{
+			var gamepadRotation = Input.MotionData.Rotation;
+
+			var rotation = Transform.Rotation;
+
+			roll = gamepadRotation.Roll();
+
+			yaw = gamepadRotation.Yaw();
+
+			pitch = gamepadRotation.Pitch();
+
+			roll = MathX.Clamp( roll, -20f, 20f );
+
+			yaw = MathX.Clamp( yaw, -20f, 20f );
+
+			pitch = MathX.Clamp( pitch, -20f, 20f );
+
+			rotation = new Angles( pitch, yaw, roll ).ToRotation();
+
+			//rotation = Rotation.Slerp( rotation, startRotation, Time.Delta * 10f );
+
+			Transform.Rotation = Rotation.Slerp( Transform.Rotation, rotation, Time.Delta * 10f );
+		}
 
 
 	}
